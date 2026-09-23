@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 103.200.28.113
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: shuma.ccwu.cc
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
 proxy-groups:
 - name: PROXIES
   type: select
