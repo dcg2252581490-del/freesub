@@ -20,20 +20,6 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 188.114.98.134
-  port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
   server: 95.182.95.178
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -46,34 +32,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇨🇿 CZ 05 - xiaohe
-  type: vless
-  server: 104.21.16.109
-  port: 443
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
 rules:
 - MATCH,PROXIES
