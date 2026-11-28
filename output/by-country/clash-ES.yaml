@@ -6,6 +6,13 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
   type: ss
+  server: 85.155.226.213
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  type: ss
   server: 108.181.121.170
   port: 443
   cipher: chacha20-ietf-poly1305
@@ -17,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
 rules:
 - MATCH,PROXIES
